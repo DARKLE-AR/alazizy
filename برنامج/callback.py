@@ -1,3 +1,4 @@
+
 # Copyright (C) 2021 By AmortMusicProject
 
 from driver.queues import QUEUE
@@ -134,7 +135,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotleave لطرد حساب المساعد 
  » /ping - إظهار حالة البوت بينغ
  » /alive  إظهار معلومات البوت  (في المجموعة)
-  ⚡ ادارة سورس العزايزي @php_7
+  ⚡ مطور سورس فينوم @V_O_O
 __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")]]
@@ -153,7 +154,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /restart - restart your bot
 » /leaveall - order userbot to leave from all group
 
- ⚡ ادارة سورس العزايزي @php_7
+ ⚡ مطور سورس فينوم @V_O_O
 """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
@@ -164,7 +165,7 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbmenu"))
 async def cbmenu(_, query: CallbackQuery):
     if query.message.sender_chat:
-        return await query.answer("you're an Anonymous Admin !\n\n» revert back to user account from admin rights.")
+        return await query.answer("you re an Anonymous Admin !\n\n» revert back to user account from admin rights.")
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
     if not a.can_manage_voice_chats:
         return await query.answer("💡 المسؤول الوحيد الذي لديه إذن إدارة الدردشات الصوتية يمكنه النقر على هذا الزر !", show_alert=True)
