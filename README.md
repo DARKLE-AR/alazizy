@@ -1,4 +1,4 @@
-https://heroku.com/deploy?template=https://github.com/DARKLE-AR
+https://heroku.com/deploy?template=https://github.com/mostafaaziza/alazizy
 
 [darkle source](https://t.me/M_2_2)
 
